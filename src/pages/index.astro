@@ -1,0 +1,75 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import Theme from "../components/theme.astro";
+---
+
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Theme />
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1 class="text-xl font-bold pb-8">🧑‍🚀 Hola, Bienvenido a mi blog!</h1>
+      <p>
+        ¿Eres un apasionado de la guitarra que busca ampliar sus conocimientos y
+        habilidades musicales?
+      </p><p>
+        En este blog, encontrarás todo lo que necesitas para llevar tu guitarra
+        al siguiente nivel.Mi nombre es Daniel soy un guitarrista con 13 años de
+        experiencia y estoy aquí para compartir contigo mi pasión por la música.
+      </p>
+      <p>En este sitio, encontrarás:</p>
+
+      <ul class="list-disc list-inside mt-8 md:mt-5">
+        <li>
+          <b>Lecciones de guitarra:</b> Aprende desde lo básico hasta técnicas avanzadas
+          de guitarra.
+        </li>
+        <li>
+          <b>Consejos y tips:</b> Descubre cómo mejorar tu técnica, tocar tus canciones
+          favoritas y escribir tu propia música.
+        </li>
+        <li>
+          <b>Reseñas de equipos:</b> Encuentra los mejores guitarras, amplificadores
+          y pedales para tus necesidades.
+        </li>
+        <li>
+          <b>Comunidad de guitarristas:</b> Únete a nuestra comunidad de guitarristas
+          y comparte tu pasión por la música.
+        </li>
+      </ul>
+      <br />
+      <br />
+
+      <div class="text-center">
+        <p class="font-bold">
+          ¿Estás listo para comenzar tu viaje musical? <br /> ¡Suscríbete a mi blog
+          hoy mismo!
+        </p>
+        <p class="pt-2">
+          Suscríbete a mi blog para recibir actualizaciones por correo
+          electrónico.
+        </p>
+        <div class="pt-5 gap-">
+          <input
+            class="outline-none px-5 py-2 rounded-lg focus:border-black bg-slate-300 focus:bg-slate-300"
+            type="email"
+            name="email"
+            id=""
+          />
+          <button
+            class="px-5 py-2 font-bold active:bg-cyan-600 bg-cyan-500 rounded-lg text-white"
+            >Suscribe</button
+          >
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
